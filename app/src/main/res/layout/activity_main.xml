@@ -1,0 +1,132 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eslabon.laboratoryexercise3.MainActivity">
+
+    <TextView
+        android:id="@+id/dataLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Data: "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/dataInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dataLabel"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/filenameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Filename: "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/dataLabel"/>
+
+    <EditText
+        android:id="@+id/filenameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/filenameLabel"
+        android:ems="10"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/dataInput"/>
+
+    <Button
+        android:id="@+id/sharedPrefBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Shared Preferences"
+        android:layout_below="@+id/dataInput"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sharedPreferences" />
+
+    <Button
+        android:id="@+id/intStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Internal Storage"
+        android:layout_below="@+id/sharedPrefBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="internalStorage" />
+
+    <Button
+        android:id="@+id/intCacheBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Internal Cache"
+        android:layout_below="@+id/intStorBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveInternalCache" />
+
+    <Button
+        android:id="@+id/extCacheBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Cache"
+        android:layout_below="@+id/intCacheBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveExternalCache" />
+
+    <Button
+        android:id="@+id/extStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Storage"
+        android:layout_below="@+id/extCacheBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveExternalStorage" />
+
+    <Button
+        android:id="@+id/extPubStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Public Storage"
+        android:layout_below="@+id/extStorBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveExternalPublic" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Next"
+        android:layout_below="@+id/extPubStorBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="secondActivity" />
+
+</RelativeLayout>

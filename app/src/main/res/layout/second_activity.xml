@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Filename: "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/fnInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fnLabel"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/loadSharedBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Shared Preferences"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadSharedPreferences"
+        android:layout_below="@+id/textDisplay"/>
+
+    <Button
+        android:id="@+id/loadIntStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Internal Storage"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadInternalStorage"
+        android:layout_below="@+id/loadSharedBtn"/>
+
+    <Button
+        android:id="@+id/loadIntCache"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Internal Cache"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadIntCache"
+        android:layout_below="@+id/loadIntStorBtn"/>
+
+    <Button
+        android:id="@+id/loadExtCache"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Cache"
+        android:layout_below="@+id/loadIntCache"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadExtCache" />
+
+    <Button
+        android:id="@+id/loadExtStor"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Storage"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadExtStor"
+        android:layout_below="@+id/loadExtCache"/>
+
+    <Button
+        android:id="@+id/loadExtPub"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="External Public Storage"
+        android:layout_below="@+id/loadExtStor"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadExtPub" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Previous"
+        android:layout_below="@+id/loadExtPub"
+        android:layout_centerHorizontal="true"
+        android:onClick="mainActivity" />
+
+</RelativeLayout>
